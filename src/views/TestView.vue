@@ -53,7 +53,7 @@ function toggleComplete(index) {
 
 <template>
   <div class="container">
-    <h1>Test {{ $route.params?.id }}</h1>
+    <h1>Todo List {{ $route.params?.id }}</h1>
 
     <form class="form" @submit.prevent="onSubmit" @reset="resetForm">
       <BaseInput v-model="input.name" name="name" placeholder="John" required />
